@@ -17,8 +17,6 @@ class ComposerStaticInit2fd2e5716ce9c2823dbc97a6b74acb54
         ),
         'P' => 
         array (
-            'Psr\\Log\\' => 8,
-            'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
         ),
@@ -38,19 +36,9 @@ class ComposerStaticInit2fd2e5716ce9c2823dbc97a6b74acb54
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
         ),
-        'Psr\\Log\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/log/src',
-        ),
-        'Psr\\Http\\Server\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/http-server-handler/src',
-            1 => __DIR__ . '/..' . '/psr/http-server-middleware/src',
-        ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Container\\' => 
         array (
@@ -76,6 +64,13 @@ class ComposerStaticInit2fd2e5716ce9c2823dbc97a6b74acb54
             'Rain' => 
             array (
                 0 => __DIR__ . '/..' . '/rain/raintpl/library',
+            ),
+        ),
+        'P' => 
+        array (
+            'Pimple' => 
+            array (
+                0 => __DIR__ . '/..' . '/pimple/pimple/src',
             ),
         ),
     );
