@@ -13,3 +13,9 @@ menu.addEventListener('click', ()=> {
 overlay.addEventListener('click', ()=> {
     menu.classList.remove('abrir-menu');
 })
+
+window.addEventListener('scroll', ()=>{
+    let scroll = document.querySelector('.btn-scroll-top a');
+
+    scroll.classList.toggle('active', window.scrollY > 450);
+})
