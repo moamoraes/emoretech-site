@@ -1,4 +1,4 @@
-/* Geral */
+/* #region Geral */
 *{
     margin: 0;
     padding: 0;
@@ -77,7 +77,53 @@ h2.titulo span{
     visibility: visible;   
 }
 
-/* Header */
+.alert-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100000;        
+}
+
+.alert{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 250px;  
+    top: 100px;        
+    padding: 0 30%;
+    background-color: white;
+    border-radius: 10%;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: none;
+}
+
+.alert.open{
+    display: flex;
+}
+
+.alert.open ~ .overlay-menu{
+    display: block;
+}
+
+.alert button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #004FF1;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+/* #endregion */
+
+/* #region Header */
 header{
     padding: 40px 4%;    
 }
@@ -120,7 +166,9 @@ header nav.menu-desktop ul li{
     transition: .2s;
 }
 
-/* Menu Mobile */
+/* #endregion */
+
+/* #region Menu Mobile */
 .btn-abrir-menu i{
     color: #004FF1;
     font-size: 40px;
@@ -188,7 +236,9 @@ header nav.menu-desktop ul li{
     display: none;
 }
 
-/* Topo */
+/* #endregion */
+
+/* #region Topo */
 section.topo-site{
     padding: 40px 4%;    
 }
@@ -240,7 +290,9 @@ section.topo-site .flex{
     }
 }
 
-/* Especialidade */
+/* #endregion */
+
+/* #region Especialidade */
 section.especialidades{
     padding: 80px 4%;
 }
@@ -272,7 +324,9 @@ section.especialidades .flex{
     margin: 15px 0;
 }
 
-/* Sobre*/
+/* #endregion */
+
+/* #region Sobre*/
 section.sobre{
     padding: 80px 4%;
 }
@@ -291,7 +345,9 @@ section.sobre .flex{
     text-align: justify;
 }
 
-/* Projetos */
+/* #endregion */
+
+/* #region Projetos */
 section.projetos{
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.274);
@@ -342,7 +398,9 @@ section.projetos .flex{
     opacity: 1;
 }
 
-/* Contato */
+/* #endregion */
+
+/* #region Contato */
 section.contato{
     padding: 80px 4%;
 }
@@ -392,7 +450,9 @@ form .btn-submit input{
     transition: .2s;
 }
 
-/* Footer */
+/* #endregion */
+
+/* #region Footer */
 footer{
     padding: 30px 4%;
     box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.274);
@@ -418,6 +478,10 @@ footer .line-footer p i{
 footer .line-footer p a{
     color: white;
 }
+
+/* #endregion */
+
+/* #region Reponsive */
 
 @media screen and (max-width: 1020px){
     /* Geral */
@@ -484,3 +548,5 @@ footer .line-footer p a{
         text-align: center;
     }
 }
+
+/* #endregion */
