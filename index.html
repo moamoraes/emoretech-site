@@ -61,12 +61,13 @@
     </header>    
 
     <main>
-        <div class="alert-box">
-                <div id="alert" class="alert">  
-                    <button id="close-alert">
-                        Ok
-                    </button>                  
-                </div>
+        <div class="alert-box">            
+            <div id="alert" class="alert">                  
+                <button id="close-alert">
+                    Ok
+                </button>                  
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div>        
 
         <div class="btn-scroll-top">
@@ -188,10 +189,11 @@
         <section id="contato" class="contato">
             <div class="interface">
                 <h2 class="titulo"> Fale com a gente</h2>
-                <form method="POST" action="./contato.php">
+                <form name="contactForm" method="POST" action="./contato.php">
                     <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
-                    <input type="text" name="email" id="email" placeholder="Seu E-mail" required>
-                    <input type="text" name="telefone" id="telefone" placeholder="Seu Telefone">
+                    <input type="text" name="email" id="email" placeholder="Seu E-mail" onblur="validacaoEmail(contactForm.email)" maxlength="50" required>
+                    <p id="invalid-email" class="invalid-form">E-mail inválido</p>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Seu Telefone" onkeyup="handlePhone(event)">
                     <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-submit">
                         <input type="submit" value="Enviar">

@@ -3,39 +3,35 @@
     $dom = new \DOMDocument();
     $dom->loadHTMLFile("./index.html");
 
-    $nome = addslashes($_POST['nome']);
-    $email = addslashes($_POST['email']);
-    $telefone = addslashes($_POST['telefone']);
-    $mensagem = addslashes($_POST['mensagem']);
+    $name = addslashes($_POST['nome']);
+    $clientEmail = addslashes($_POST['email']);
+    $phone = addslashes($_POST['telefone']);
+    $textEmail = addslashes($_POST['mensagem']);
 
-    // $to = "contato@emoretech.com.br";
-    $to = "moacir.rodrigs@gmail.com";
+    $from = "contato@emoretech.com.br";        
 
-    $subject = "Contato $nome";
+    $subject = "Contato $name";
 
-    $body = "$mensagem \n Telefone: $telefone";
+    $body = "$textEmail \n Telefone: $phone";
 
-    $header = "From: $to \n Reply-to: $email \n X=Mailer:PHP/".phpversion();
+    $headers .= "From: $from\n";
+    $headers .= "Reply-To: $clientEmail\n";
+    $headers .= "Return-Path: $from\n";
 
     $message = "";
 
-    if(mail($to, $subject, $body, $header)){
-        $message = "Email enviado!";
-    }
+    if(!mail($from, $subject, $body, $headers, "-r".$from)){ 
+        $message = "Falha no envio de e-mail";
+    }   
     else{
-        $message = "Erro ao enviar e-mail";
+        $message = "Obrigado por entrar em contato, retornaremos em breve!";
     }
-   
-    $alertElement = $dom->getElementById('alert');
 
-    if ($alertElement) {
-        $alertMessage = $dom->createElement("p", $message);
+    $alertElement = $dom->getElementById('alert');    
+    $alertMessage = $dom->createElement("p", $message);
 
-        $alertElement->setAttribute('class', 'alert open');
-        $alertElement->appendChild($alertMessage);        
-    } else {        
-        echo "Elemento #alert não encontrado.";
-    }
+    $alertElement->setAttribute('class', 'alert open');
+    $alertElement->appendChild($alertMessage);   
 
     echo $dom->saveHTML();
 ?>
