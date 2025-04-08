@@ -1,232 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Estilo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
 
     <title>EmoreTech</title>
-</head>
-<body>    
-
+  </head>
+  <body>
     <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="#">
-                    <img src="/images/logoB.png" width="100" height="100" alt="Logo EmoreTech">                
-                </a>
-            </div>
-    
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#especialidades">Especialidades</a></li>
-                    <li><a href="#sobre">Quem somos</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                </ul>
-            </nav>    
-            <div class="btn-contato-header">
-                <a href="#contato">
-                    <button>Contato</button>
-                </a>
-            </div>
+      <div class="interface">
+        <div class="logo">
+          <a href="#">
+            <img
+              src="/images/logoB.png"
+              width="100"
+              height="100"
+              alt="Logo EmoreTech"
+            />
+          </a>
+        </div>
 
-            <div class="btn-abrir-menu" id="btn-abrir-menu">
-                <i class="bi bi-list"></i>
-            </div>
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Quem somos</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+        </nav>
+        <div class="btn-contato-header">
+          <a href="#contato">
+            <button>Contato</button>
+          </a>
+        </div>
 
-            <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <i class="bi bi-x-lg"></i>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#especialidades">Especialidades</a></li>
-                        <li><a href="#sobre">Quem somos</a></li>
-                        <li><a href="#projetos">Projetos</a></li>  
-                        <li><a href="#contato">Contato</a></li>              
-                    </ul>
-                </nav>
-            </div>
+        <div class="btn-abrir-menu" id="btn-abrir-menu">
+          <i class="bi bi-list"></i>
+        </div>
 
-            <div class="overlay-menu" id="overlay-menu"></div>
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#especialidades">Especialidades</a></li>
+              <li><a href="#sobre">Quem somos</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
 
-        </div>      
-    </header>    
+        <div class="overlay-menu" id="overlay-menu"></div>
+      </div>
+    </header>
 
     <main>
-        <div class="alert-box">            
-            <div id="alert" class="alert">                  
-                <button id="close-alert">
-                    Ok
-                </button>                  
-            </div>
-            <div class="overlay-menu" id="overlay-menu"></div>
-        </div>        
-
-        <div class="btn-scroll-top">
-            <a href="#"><button> <i class="bi bi-arrow-up-circle"></i></button></a>
+      <div class="alert-box">
+        <div id="alert" class="alert">
+          <button id="close-alert">Ok</button>
         </div>
-        <section id="topo-site" class="topo-site">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1>Bem-Vindo a Emore<span>Tech</span>!</h1>
-                        <p>
-                            Entregamos a tecnologia e inovação que pode facilitar sua vida e enriquecer sua jornada diária.
-                        </p>
-                        <div class="btn-contato">
-                            <a href="#contato">
-                                <button>Contato</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="img-topo-site">
-                        <img src="/images/logoW.png" width="200" height="200" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="overlay-menu" id="overlay-menu"></div>
+      </div>
 
-        <section id="especialidades" class="especialidades">
-            <div class="interface">
-                <h2 class="titulo">Nossas <span>Especialidades</span></h2>
-                <div class="flex">
-                    <div class="especialidades-box">
-                        <i class="bi bi-globe-americas"></i>
-                        <h3>WebSite</h3>
-                        <p>
-                            Um website bem projetado é essencial para aumentar a visibilidade do negócio, 
-                            alcançando clientes globalmente e transmitindo credibilidade para atrair e reter clientes.
-                        </p>
-                    </div>
-                    <div class="especialidades-box">
-                        <i class="bi bi-phone"></i>
-                        <h3>Aplicativo</h3>
-                        <p>
-                            Um aplicativo customizado pode otimizar a rotina diária ao oferecer soluções personalizadas e eficientes, 
-                            automatizando tarefas, simplificando processos e proporcionando maior organização e produtividade.
-                        </p>
-                    </div>
-                    <div class="especialidades-box">
-                        <i class="bi bi-pc-display"></i>
-                        <h3>Montagem/Manutenção de Computadores</h3>
-                        <p>
-                            A montagem e manutenção de computadores são essenciais para garantir um desempenho ideal, 
-                            atender às necessidades específicas do usuário e prolongar a vida útil dos equipamentos, 
-                            além de possibilitar economia financeira.
-                        </p>
-                    </div>
-                </div>
+      <div class="btn-scroll-top">
+        <a href="#"
+          ><button><i class="bi bi-arrow-up-circle"></i></button
+        ></a>
+      </div>
+      <section id="topo-site" class="topo-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>Bem-Vindo a Emore<span>Tech</span>!</h1>
+              <p>
+                Entregamos a tecnologia e inovação que pode facilitar sua vida e
+                enriquecer sua jornada diária.
+              </p>
+              <div class="btn-contato">
+                <a href="#contato">
+                  <button>Contato</button>
+                </a>
+              </div>
             </div>
-        </section>
-
-        <section id="sobre" class="sobre">
-            <div class="interface">
-                <h2 class="titulo">Quem somos nós<span>?</span></h2>
-                <div class="flex">
-                    <div class="img-sobre">
-                        <img src="/images/logoW.png" width="200" height="200" alt="">
-                    </div>
-                    <div class="txt-sobre">                        
-                        <p>
-                            A EmoreTech é uma empresa de tecnologia fundada em 2021. 
-                            Nossa jornada começou com a visão de que a tecnologia não deveria ser um obstáculo, 
-                            mas sim uma ferramenta poderosa para melhorar a qualidade de vida.
-                        </p>
-                        <p>
-                            Estamos dedicados a tornar a tecnologia acessível a todos, capacitando indivíduos e comunidades 
-                            a enfrentar os desafios do mundo moderno com facilidade e confiança. Desde o nosso início, nosso objetivo 
-                            tem sido simplificar a vida diária das pessoas, oferecendo soluções inovadoras e acessíveis.
-                        </p>
-                        <p>
-                            Acreditamos que a verdadeira inovação não está apenas na criação de tecnologia, mas sim em torná-la compreensível e utilizável por todos. 
-                            Estamos comprometidos em capacitar nossos clientes, oferecendo suporte técnico e treinamento personalizado para garantir que eles possam 
-                            aproveitar ao máximo nossos produtos e serviços.
-                        </p>
-                        <p>
-                            Mais do que uma empresa de tecnologia, somos uma comunidade de pensadores criativos e entusiastas da tecnologia, 
-                            apaixonados por encontrar soluções inteligentes para os desafios do dia a dia. 
-                        </p>
-                        <p>
-                            Junte-se a nós e descubra como a tecnologia pode facilitar sua vida e enriquecer sua jornada diária!
-                        </p>
-
-                        <div class="btn-social">
-                            <a href="https://www.instagram.com/emore.tech/" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/company/emoretech/" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/moamoraes/" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-github"></i></button></a>
-                        </div>
-                    </div>                    
-                </div>
+            <div class="img-topo-site">
+              <img src="/images/logoW.png" width="200" height="200" alt="" />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="projetos" class="projetos">            
-            <div class="interface">
-                <h2 class="titulo">Nossos Projetos</h2>
-                <div class="flex">
-                    <div class="img-proj" style="background-image: url(images/scheduler.png);">
-                        <div class="overlay">Agendador</div>
-                    </div>
-                    <div class="img-proj" style="background-image: url(images/app-sample.webp);">
-                        <div class="overlay">Em breve</div>
-                    </div>
-                    <div class="img-proj" style="background-image: url(images/app-sample.webp);">
-                        <div class="overlay">Em breve</div>
-                    </div>
-                  
-                </div>
+      <section id="especialidades" class="especialidades">
+        <div class="interface">
+          <h2 class="titulo">Nossas <span>Especialidades</span></h2>
+          <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-globe-americas"></i>
+              <h3>Site</h3>
+              <p>
+                Desenvolvemos sites profissionais que fortalecem a presença
+                online da sua marca. Cada projeto é pensado para destacar seus
+                diferenciais, transmitir confiança e atrair novos clientes, seja
+                local ou globalmente.
+              </p>
             </div>
-        </section>
+            <div class="especialidades-box">
+              <i class="bi bi-phone"></i>
+              <h3>Aplicativos</h3>
+              <p>
+                Desenvolvemos aplicativos sob medida para atender às
+                necessidades específicas do seu negócio. Nossas soluções focam
+                em automatizar tarefas, otimizar fluxos de trabalho e aumentar a
+                produtividade de forma prática e eficiente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="contato" class="contato">
-            <div class="interface">
-                <h2 class="titulo"> Fale com a gente</h2>
-                <form name="contactForm" method="POST" action="./contato.php">
-                    <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
-                    <input type="text" name="email" id="email" placeholder="Seu E-mail" onblur="validacaoEmail(contactForm.email)" maxlength="50" required>
-                    <p id="invalid-email" class="invalid-form">E-mail inválido</p>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Seu Telefone" onkeyup="handlePhone(event)">
-                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
-                    <div class="btn-submit">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
+      <section id="sobre" class="sobre">
+        <div class="interface">
+          <h2 class="titulo">Quem somos nós<span>?</span></h2>
+          <div class="flex">
+            <div class="img-sobre">
+              <img src="/images/logoW.png" width="200" height="200" alt="" />
             </div>
-        </section>
-        
+            <div class="txt-sobre">
+              <p>
+                A EmoreTech é uma empresa de tecnologia fundada em 2021. Nossa
+                jornada começou com a visão de que a tecnologia não deveria ser
+                um obstáculo, mas sim uma ferramenta poderosa para melhorar a
+                qualidade de vida.
+              </p>
+              <p>
+                Estamos dedicados a tornar a tecnologia acessível a todos,
+                capacitando indivíduos e comunidades a enfrentar os desafios do
+                mundo moderno com facilidade e confiança. Desde o nosso início,
+                nosso objetivo tem sido simplificar a vida diária das pessoas,
+                oferecendo soluções inovadoras e acessíveis.
+              </p>
+              <p>
+                Acreditamos que a verdadeira inovação não está apenas na criação
+                de tecnologia, mas sim em torná-la compreensível e utilizável
+                por todos. Estamos comprometidos em capacitar nossos clientes,
+                oferecendo suporte técnico e treinamento personalizado para
+                garantir que eles possam aproveitar ao máximo nossos produtos e
+                serviços.
+              </p>
+              <p>
+                Mais do que uma empresa de tecnologia, somos uma comunidade de
+                pensadores criativos e entusiastas da tecnologia, apaixonados
+                por encontrar soluções inteligentes para os desafios do dia a
+                dia.
+              </p>
+              <p>
+                Junte-se a nós e descubra como a tecnologia pode facilitar sua
+                vida e enriquecer sua jornada diária!
+              </p>
+
+              <div class="btn-social">
+                <a
+                  href="https://www.instagram.com/emore.tech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/emoretech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a
+                  href="https://github.com/moamoraes/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="projetos">
+        <div class="interface">
+          <h2 class="titulo">Nossos Projetos</h2>
+          <div class="flex">
+            <div
+              class="img-proj"
+              style="background-image: url(images/scheduler.png)"
+            >
+              <div class="overlay">Agenda+</div>
+            </div>
+            <!-- <div
+              class="img-proj"
+              style="background-image: url(images/app-sample.webp)"
+            >
+              <div class="overlay">Em breve</div>
+            </div>
+            <div
+              class="img-proj"
+              style="background-image: url(images/app-sample.webp)"
+            >
+              <div class="overlay">Em breve</div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contato">
+        <div class="interface">
+          <h2 class="titulo">Fale com a gente</h2>
+          <form name="contactForm" method="POST" action="./contato.php">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Seu Nome"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Seu E-mail"
+              onblur="validacaoEmail(contactForm.email)"
+              maxlength="50"
+              required
+            />
+            <p id="invalid-email" class="invalid-form">E-mail inválido</p>
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="Seu Telefone"
+              onkeyup="handlePhone(event)"
+            />
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <div class="btn-submit">
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-
-                    <div class="logo-footer">
-                        <img src="/images/logoB.png" width="100" height="100" alt="">
-                    </div>
-                    
-                    <div class="btn-social">
-                        <a href="https://www.instagram.com/emore.tech/" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="https://www.linkedin.com/company/emoretech/" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="https://github.com/moamoraes/" target="_blank" rel="noopener noreferrer"><button><i class="bi bi-github"></i></button></a>                                                 
-                    </div>
-                </div>
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <img src="/images/logoB.png" width="100" height="100" alt="" />
             </div>
 
-            <div class="line-footer borda">
-                <p><i class="bi bi-envelope-fill"></i> 
-                    <a href="mailto:contato@emoretech.com.br">contato@emoretech.com.br</a>
-                </p>
+            <div class="btn-social">
+              <a
+                href="https://www.instagram.com/emore.tech/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button><i class="bi bi-instagram"></i></button
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/emoretech/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+              <a
+                href="https://github.com/moamoraes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button><i class="bi bi-github"></i></button
+              ></a>
             </div>
+          </div>
         </div>
+
+        <div class="line-footer borda">
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:contato@emoretech.com.br"
+              >contato@emoretech.com.br</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
